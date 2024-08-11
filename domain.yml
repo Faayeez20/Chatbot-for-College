@@ -1,0 +1,70 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - query_CET
+  - query_JEE
+  - marking_CET
+  - marking_JEE
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_query_CET:
+  - text: "CET stands for Common Entrance Test. It is an entrance examination conducted by various educational institutions or governing bodies
+   to select candidates for admission into specific courses, such as engineering, medicine, management, or law. To apply for CET, you usually need
+   to meet the eligibility criteria, fill out the application form, pay the required fees, and participate in the exam. For more details visit the
+   link given below: "
+    link: "http://cetcell.mahacet.org/"
+
+  utter_query_JEE:
+  - text: "JEE stands for Joint Entrance Examination. It is a national-level entrance examination conducted in India for admission into
+   undergraduate engineering and architecture programs at prestigious institutions such as the Indian Institutes of Technology (IITs) and 
+   the National Institutes of Technology (NITs). To apply for JEE, you typically need to meet the eligibility criteria, register online, fill 
+   out the application form, upload necessary documents, pay the application fee, and then appear for the exam. For more details visit the
+   link given below: "
+   link: "https://jeemain.nta.nic.in/"
+
+  utter_marking_CET:
+  - text: "The total marks of CET (Common Entrance Test) can vary depending on the specific examination and the governing body conducting it.
+   Each CET may have its own marking scheme and total marks allocated.
+   As per the MHT CET paper pattern .There will be two sections in the exam - Physics, Chemistry, and Mathematics for (pcm), and Biology for (pcb).
+   Each section of the MHT CET 2023 question paper will carrier 100 marks.There is no negative marking for admission to B.Tech and other courses in the
+   participating institutes of Maharashtra. It is recommended to check the official notification or website of the respective CET exam to find the exact total marks 
+   and marking scheme for that particular test."
+    link: "http://cetcell.mahacet.org/"
+
+  utter_marking_JEE:
+  - text: "There are two main papers in JEE Mains, depending on the courses the candidates are interested in applying for JEE Main.
+   The total marks for JEE Main Paper 1- B. E/B. Tech is 300, and for Paper 2- B.Arch and B.Planning are 400.
+   In JEE main numerical value questions will fetch 4 marks for every correct response, and 1 mark will be deducted for incorrect answers.
+   It is recommended to check the official notification or website of the respective JEE exam to find the exact total marks and marking scheme for that particular test."
+   link: "https://jeemain.nta.nic.in/"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
